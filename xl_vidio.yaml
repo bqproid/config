@@ -1,0 +1,27 @@
+proxies:
+- name: VPN_1
+  server: 104.22.5.240
+  port: 443
+  type: trojan
+  password: sgkione
+  skip-cert-verify: true
+  sni: sg3.dklongtong.web.id
+  network: ws
+  ws-opts:
+    path: /trojan
+    headers:
+      Host: sg3.dklongtong.web.id
+  udp: true
+- name: VPN_2
+  server: 104.22.5.240
+  port: 443
+  type: trojan
+  password: sgkione
+  skip-cert-verify: true
+  sni: sg3.dklongtong.xyz
+  network: ws
+  ws-opts:
+    path: /trojan
+    headers:
+      Host: sg3.dklongtong.xyz
+  udp: true
